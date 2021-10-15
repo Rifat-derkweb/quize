@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+	margin-left:20px;
+}
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+</style>
+<body>
+<center> <h1> এই সপ্তাহের প্রশ্ন :- </h1> </center>
+
+<h1>প্রশ্নঃ শীতকাল কোন দুইটি মাস ?</h1>
+<label class="container">কার্তিক-অগ্রহায়ণ
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">অগ্রহায়ণ -পৌষ
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">পৌষ-মাঘ
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">মাঘ-ফাল্গুন
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<h1>প্রশ্নঃ বাংলাদেশের বীরত্বের জন্য কয়জনকে সর্বোচ্চ সম্মান বীরশ্রেষ্ঠ খেতাব দেওয়া হয়?</h1>
+<label class="container">৯ জন
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">৭ জন
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">৮ জন
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">১০ জন
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<h1>প্রশ্নঃ কোন কোন মাসে কাল-বৈশাখী ঝড় হয়?</h1>
+<label class="container">ফাল্গুন-চৈত্র
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">চৈত্র-বৈশাখ
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">বৈশাখ-জৈষ্ঠ
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">বৈশাখ
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<h1>প্রশ্নঃ বীরশ্রেষ্ঠ মোস্তফা কামাল কোথায় জন্মগ্রহণ করেন?</h1>
+<label class="container">সিলেট জেলায়
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">ঢাকা জেলায়
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">রংপুর জেলায়
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">ভোলা জেলায়
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<h1>প্রশ্নঃ স্বাধীনতা যুদ্ধে বাংলাদেশ-ভারত মিত্র বাহিনীর কাছে পাকিস্তান সেনাবাহিনী আত্নসমর্পন করে কোন তারিখে ?</h1>
+<label class="container">৬ ডিসেম্বর
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">২৬ মার্চ
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">১৬ ডিসেম্বর
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">১৪ ডিসেম্বর
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<h1>প্রশ্নঃ ১৯৭১ সালের ২৫ মার্চ রাতে পাকিস্তানি সামরিক অভিযানের সাংকেতিক নাম -</h1>
+<label class="container">অপারেশন ক্লোজ ডোর
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">অপারেশন সার্চ লাইট
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">অপারেশন ক্লিন হার্ট
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">অপারেশন ব্লু স্টার
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<center>
+	 <a href="thanks.html" style="height: 50px;width: 80%; background-color: blue; color: white; text-align: center; text-decoration: none; font-size: 25px; padding-left: 100px; padding-right: 100px; padding-top: 10px; padding-bottom: 10px; border-radius: 10px;"> Submit </a>
+</center>
+  
+
+
+
+<br><br>
+</body>
+</html>
